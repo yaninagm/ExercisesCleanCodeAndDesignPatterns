@@ -3,9 +3,7 @@ package com.example.demo;
 import com.example.demo.openClosedPrinciple.Color;
 import com.example.demo.openClosedPrinciple.Product;
 import com.example.demo.openClosedPrinciple.Size;
-import com.example.demo.openClosedPrinciple.goodPractice.BetterFilter;
-import com.example.demo.openClosedPrinciple.goodPractice.ColorSpecification;
-import com.example.demo.openClosedPrinciple.goodPractice.Specification;
+import com.example.demo.openClosedPrinciple.goodPractice.*;
 import com.example.demo.openClosedPrinciple.wrongPractice.ProductFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -36,7 +34,8 @@ public class DemoApplication {
 		System.out.println("Good practice filtering products: ");
 		betterFilter.filter(products, specification).forEach(p -> System.out.println(((Product) p).getName() + " is green"));
 
-
+		//Combinacion
+		betterFilter.filter(products, new AndSpecification<>(new ColorSpecification(Color.BLUE), new SizeSpecification(Size.LARGE))).forEach(p -> System.out.println(p.getName() + " is Blue and is Large"));
 	}
 
 }
