@@ -19,4 +19,6 @@ public class ProductFilter{
 	public Stream<Product> filterBySizeAndColor(List<Product> products, Size size, Color color){
 		return products.stream().filter(p -> p.getSize() == size && p.getColor() == color);
 	}
+
+	// Cada vez que necesite un nuevo filtro tendré que modificar esta clase y añadir el nuevo filtro aquí
 }

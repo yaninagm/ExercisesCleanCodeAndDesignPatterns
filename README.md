@@ -26,7 +26,7 @@ La solución mas sencilla es hacer un metodo por cada tipo de busqueda
 
 Cada vez que el equipo de producto quiera hacer un nuevo tipo de busqueda, tendré que modificar la clase y crear un metodo nuevo que cumpla con el nuevo filtro.
 
-[Codigo de ejemplo con malas prácticas](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/openClosedPrinciple/problem/ProductFilter.java)
+[Codigo de ejemplo con malas prácticas](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/openClosedPrinciple/problem)
 
 **Solución:**
 
