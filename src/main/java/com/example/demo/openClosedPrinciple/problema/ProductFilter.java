@@ -7,7 +7,7 @@ import com.example.demo.openClosedPrinciple.Size;
 import java.util.List;
 import java.util.stream.Stream;
 
-class ProductFilter{
+public class ProductFilter{
 	public Stream<Product> filterByColor(List<Product> products, Color color){
 		return products.stream().filter(p -> p.getColor() == color);
 	}
