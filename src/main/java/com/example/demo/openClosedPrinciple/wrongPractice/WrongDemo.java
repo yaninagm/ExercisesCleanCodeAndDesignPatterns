@@ -1,4 +1,4 @@
-package com.example.demo.openClosedPrinciple.problem;
+package com.example.demo.openClosedPrinciple.wrongPractice;
 
 import com.example.demo.openClosedPrinciple.Color;
 import com.example.demo.openClosedPrinciple.Product;
