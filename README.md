@@ -14,7 +14,7 @@ I will add examples for solid patterns and other important patterns
 **D:** Dependency Inversion Principle .... (DIP)
 
 ### Open Closed Principle (OSP)
-`<< A module should be open for extension but closed for modification.>>`
+_`<< A module should be open for extension but closed for modification.>>`_
 
 In this example I will show a situation where the boss want differents search all the days.
 
@@ -25,7 +25,8 @@ La solución mas sencilla es hacer un metodo por cada tipo de busqueda
 **Problema:**
 
 Cada vez que el equipo de producto quiera hacer un nuevo tipo de busqueda, tendré que modificar la clase y crear un metodo nuevo que cumpla con el nuevo filtro.
-https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/openClosedPrinciple/problema/ProductFilter.java
+
+[Codigo de ejemplo con malas prácticas](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/openClosedPrinciple/problem/ProductFilter.java)
 
 **Solución:**
 

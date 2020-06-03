@@ -3,14 +3,12 @@ package com.example.demo;
 import com.example.demo.openClosedPrinciple.Color;
 import com.example.demo.openClosedPrinciple.Product;
 import com.example.demo.openClosedPrinciple.Size;
-import com.example.demo.openClosedPrinciple.problema.ProductFilter;
+import com.example.demo.openClosedPrinciple.problem.ProductFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 @SpringBootApplication
 public class DemoApplication {
