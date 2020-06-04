@@ -20,16 +20,8 @@ public class OwnDemoRun {
     	Product house = new Product("House", Color.BLUE, Size.LARGE);
     	List<Product> products = Arrays.asList(apple, tree, house);
 
-
     	// Realizar los filtros necesarios
-		Condition conditionByColor = new ConditionByColor(Color.GREEN);
-		Condition conditionBySize = new ConditionBySize(Size.LARGE);
-		Filter filter = new Filter();
-		filter.filter(products, conditionByColor).forEach(p -> System.out.println("producto: "+ p.getName()));
-		filter.filter(products, conditionBySize).forEach(p -> System.out.println("producto: "+ p.getName()));
 
-		System.out.println("GREEN AND LARGE");
-		filter.filterAnd(products, conditionByColor, conditionBySize).forEach(p -> System.out.println("producto: "+ p.getName()));
 	}
 
 

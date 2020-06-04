@@ -3,10 +3,10 @@ package com.example.demo.openClosedPrinciple.goodPractice;
 import com.example.demo.openClosedPrinciple.Color;
 import com.example.demo.openClosedPrinciple.Product;
 
-public class ColorSpecification implements Specification<Product> {
+public class SpecificationByColor implements Specification<Product> {
 
     private Color color;
-    public ColorSpecification(Color color) {
+    public SpecificationByColor(Color color) {
         this.color = color;
     }
 
