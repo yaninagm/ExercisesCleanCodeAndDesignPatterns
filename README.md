@@ -15,8 +15,10 @@ revisar la resolución, entendiendo cual es la mejor forma de hacerlo.
 
 **D:** Dependency Inversion Principle .... (DIP)
 
-### Open Closed Principle (OSP)
+## Open Closed Principle (OSP)
 _`<< A module should be open for extension but closed for modification.>>`_
+
+Lo importante de este principio es que no debemos editar la funcionalidad que sabemos que esta lista y funcionando y que si deseamos una funcionalidad adicional hay que conectarla a lo ya existente sin modificar el código.
 
 **Ejercicio:** 
 Tenemos un sistema de catálogo de productos, donde cada producto tiene diferentes caracteristicas, como color,
