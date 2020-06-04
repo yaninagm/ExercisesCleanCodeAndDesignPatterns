@@ -46,3 +46,12 @@ Abstraer los cambios en clases diferentes, utilizando [ el patron Specificación
 La ventaja es que si alguien le solicita hacer un nuevo filtro, no tiene que modificar la clase, sino que crea una clase nueva, que herede de la ya existente
 
 [Codigo de ejemplo con buenas prácticas](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/openClosedPrinciple/goodPractice)
+
+Se podría hacer algo sencillo usando objetos para cada tipo de filtro (codigo abajo), pero no podríamos hacer de una manera sencilla los AND, es por eso que este tipo de condición se la agrupa en un metodo.
+`Filter conditionByColor = new FilterByColor(Color.GREEN);
+ 		Filter conditionBySize = new FilterBySize(Size.LARGE);
+ 		conditionByColor.filter(products).forEach(p -> System.out.println("producto: "+ p.getName()));
+ 		conditionBySize.filter(products).forEach(p -> System.out.println("producto: "+ p.getName()));`
+ 		
+ *** Por que usar el parámetro T ? ***
+ Nos permite poder adaptarnos a cualquier tipo de busqueda de cualquier elemento y de cualquier filtro

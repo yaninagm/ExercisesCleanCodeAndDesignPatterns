@@ -2,12 +2,12 @@ package com.example.demo.openClosedPrinciple.goodPractice;
 
 import com.example.demo.openClosedPrinciple.Product;
 
-public class AndSpecification<T> implements Specification<T> {
+public class SpecificationWithAnd<T> implements Specification<T> {
 
     private Specification<T> first;
     private Specification<T> second;
 
-    public AndSpecification(Specification<T> first, Specification<T> second) {
+    public SpecificationWithAnd(Specification<T> first, Specification<T> second) {
         this.first = first;
         this.second = second;
     }

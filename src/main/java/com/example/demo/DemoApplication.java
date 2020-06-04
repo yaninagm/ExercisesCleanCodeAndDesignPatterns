@@ -29,13 +29,13 @@ public class DemoApplication {
 		productFilter.filterByColor(products, Color.GREEN).forEach(p -> System.out.println(p.getName() + " is green"));
 
 		//Solution 2: Make one clase for each filter
-		BetterFilter betterFilter = new BetterFilter();
-		Specification specification = new ColorSpecification(Color.GREEN);
+		FilterByProduct filterByProduct = new FilterByProduct();
+		Specification specification = new SpecificationByColor(Color.GREEN);
 		System.out.println("Good practice filtering products: ");
-		betterFilter.filter(products, specification).forEach(p -> System.out.println(((Product) p).getName() + " is green"));
+		filterByProduct.filter(products, specification).forEach(p -> System.out.println(((Product) p).getName() + " is green"));
 
 		//Combinacion
-		betterFilter.filter(products, new AndSpecification<>(new ColorSpecification(Color.BLUE), new SizeSpecification(Size.LARGE))).forEach(p -> System.out.println(p.getName() + " is Blue and is Large"));
+		filterByProduct.filter(products, new SpecificationWithAnd<>(new SpecificationByColor(Color.BLUE), new SpecificationBySize(Size.LARGE))).forEach(p -> System.out.println(p.getName() + " is Blue and is Large"));
 	}
 
 }

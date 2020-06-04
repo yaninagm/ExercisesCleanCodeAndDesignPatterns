@@ -20,7 +20,9 @@ public class OwnDemoRun {
     	Product house = new Product("House", Color.BLUE, Size.LARGE);
     	List<Product> products = Arrays.asList(apple, tree, house);
 
-    	// Realizar los filtros necesarios aquí
+    	// Realizar los filtros necesarios
+
 	}
+
 
 }
