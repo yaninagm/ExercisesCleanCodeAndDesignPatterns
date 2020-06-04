@@ -10,10 +10,10 @@ import java.util.Arrays;
 import java.util.List;
 
 @SpringBootApplication
-public class WrongDemo {
+public class WrongDemoRun {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WrongDemo.class, args);
+		SpringApplication.run(WrongDemoRun.class, args);
 		
 		Product apple = new Product("Apple", Color.GREEN, Size.SMALL);
   		Product tree = new Product("Tree", Color.GREEN, Size.LARGE);

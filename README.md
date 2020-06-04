@@ -19,8 +19,9 @@ revisar la resolución, entendiendo cual es la mejor forma de hacerlo.
 _`<< A module should be open for extension but closed for modification.>>`_
 
 **Ejercicio:** 
-Tenemos un sistema de catalogo de productos, donde cada producto tiene diferentes caracteristicas, como color,
+Tenemos un sistema de catálogo de productos, donde cada producto tiene diferentes caracteristicas, como color,
  tamaño, etc. 
+ 
  El jefe de producto de la empresa nos solicita que le permitamos filtrar los productos por un tamaño especificado.
  Mas tarde se acerca y nos pide que filtremos según un color especificado.
  Al dia siguiente quire poder filtrar los productos usando las dos condiciones.
