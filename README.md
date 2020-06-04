@@ -29,6 +29,7 @@ Tenemos un sistema de catálogo de productos, donde cada producto tiene diferent
  Implemente el código necesario para poder filtrar diferentes productos segun los requerimientos del jefe de producto, 
  teniendo en cuenta que solicita filtros nuevos continuamente.
 
+[Aquí puede comenzar a desarrollar](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/openClosedPrinciple/ownResolution)
 
 
 **Solución 1 con malas prácticas:**
