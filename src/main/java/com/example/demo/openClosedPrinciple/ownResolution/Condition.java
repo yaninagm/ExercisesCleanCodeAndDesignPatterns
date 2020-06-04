@@ -7,5 +7,6 @@ import com.example.demo.openClosedPrinciple.Size;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class OwnProductFilter {
+public interface Condition {
+    public Boolean isEqual(Product product);
 }
