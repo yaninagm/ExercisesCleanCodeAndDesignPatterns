@@ -12,17 +12,18 @@ public class RunDemo {
 		Rectangle r = new Rectangle(2, 3);
 		userIt(r);
 
-		System.out.println(">>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<");
 
+		// Creo un cuadrado
 		Rectangle sqr = new Rectangle(5);
-		System.out.println(">>> sqr height: "+sqr.getHeight());
 		userIt(sqr);
-	}
 
+		// Creo un rectangulo
+		Rectangle rec = new Rectangle(2, 3);
+
+	}
 
 	static void userIt(Rectangle r) {
 		int weidth = r.getWidth();
-		System.out.println(">>> width: " + weidth);
 		r.setHeight(10);
 		System.out.println("Yo espero que el area de " + weidth * 10 + " y fue:  " + r.getArea());
 
