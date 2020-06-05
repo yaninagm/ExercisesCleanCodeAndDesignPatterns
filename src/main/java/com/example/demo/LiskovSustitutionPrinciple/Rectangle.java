@@ -18,12 +18,12 @@ public class Rectangle {
         this.width = width;
     }
 
-    public int getHeight() {
-        return height;
-    }
-
     public void setHeight(int height) {
         this.height = height;
+    }
+
+    public int getHeight() {
+        return height;
     }
 
     public int getArea(){
