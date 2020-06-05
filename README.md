@@ -40,7 +40,7 @@ Tenemos un sistema de catálogo de productos, donde cada producto tiene diferent
 [Aquí puede comenzar a desarrollar](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/openClosedPrinciple/ownResolution)
 
 
-**Solución 1 con malas prácticas:**
+###### Solución 1 con malas prácticas:
 
 Se desarrollo un metodo por cada uno de los tipos de filtros que nos pide el jefe de producto.
 Cada vez que el equipo de producto quiera hacer un nuevo tipo de busqueda, tendré que modificar la clase (rompe el principio de cerrado para su modificación) y crear un metodo nuevo que cumpla con el nuevo filtro.
@@ -48,7 +48,7 @@ Cada vez que el equipo de producto quiera hacer un nuevo tipo de busqueda, tendr
 
 [Codigo de ejemplo con malas prácticas](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/openClosedPrinciple/wrongPractice)
 
-**Solución2 usando el principio de OCP:**
+######  Solución2 usando el principio de OCP:
 
 Abstraer los cambios en clases diferentes, utilizando [ el patron Specificación](https://en.wikipedia.org/wiki/Specification_pattern)
 La ventaja es que si alguien le solicita hacer un nuevo filtro, no tiene que modificar la clase, sino que crea una clase nueva, que herede de la ya existente
@@ -78,3 +78,18 @@ Se podría hacer algo sencillo usando objetos para cada tipo de filtro (codigo a
  Cree rectangulos y cuadrados, teniendo en cuenta que los cuadrados tienen sus lados iguales o su altura igual a su anchura.
  
  Luego demuestre que el calculo del area para cada objeto de cada tipo da el resultado esperado.
+ 
+ Si violas este principio, da como resultado un codigo incorrecto en la herencia.
+ 
+ ###### Solución usando malas prácticas
+ 
+El método getArea() funciona correctamente para los objetos rectangulos pero no para los cuadrados.
+
+Eso es porque hay funciones que no se limitan a hacer lo que deberían hacer. Ej: getWeidth()   
+
+ ###### Solución usando buenas prácticas
+ 
+El primer punto a tner en cuenta es que no es necesario una clase cuadrado, solo deberías definir 
+si un rectangular es un cuadrado  o no a través de un metodo que lo indique.
+
+Para construir explicitamente un cuadrado o un rectangulo, usaremos el patrón fabrica

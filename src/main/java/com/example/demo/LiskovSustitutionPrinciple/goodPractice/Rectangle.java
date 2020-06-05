@@ -10,12 +10,12 @@ public class Rectangle {
         this.height = height;
     }
 
-    public int getWidth() {
-        return width;
+    public Rectangle(int size) {
+        this.width = this.height = size;
     }
 
-    public void setWidth(int width) {
-        this.width = width;
+    public int getWidth() {
+        return width;
     }
 
     public void setHeight(int height) {
@@ -29,11 +29,16 @@ public class Rectangle {
     public int getArea(){
         return width *height;
     }
+
     @Override
     public String toString() {
         return "Rectangle{" +
                 "weight=" + width +
                 ", height=" + height +
                 '}';
+    }
+
+    public boolean isSquare(){
+        return height == width;
     }
 }

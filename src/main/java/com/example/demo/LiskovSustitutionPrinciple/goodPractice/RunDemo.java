@@ -14,8 +14,7 @@ public class RunDemo {
 
 		System.out.println(">>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<");
 
-		Rectangle sqr = new Square();
-		sqr.setWidth(5);
+		Rectangle sqr = new Rectangle(5);
 		System.out.println(">>> sqr height: "+sqr.getHeight());
 		userIt(sqr);
 	}
