@@ -26,7 +26,7 @@ Las técnicas mas usadas están basadas en  el uso de la abstraccion.
 
 Lo importante de este principio es que no debemos editar la funcionalidad que sabemos que esta lista y funcionando y que si deseamos una funcionalidad adicional hay que conectarla a lo ya existente sin modificar el código.
 
-**Ejercicio:** 
+#### Ejercicio OCP 
 Tenemos un sistema de catálogo de productos, donde cada producto tiene diferentes caracteristicas, como color,
  tamaño, etc. 
  
@@ -73,4 +73,8 @@ Se podría hacer algo sencillo usando objetos para cada tipo de filtro (codigo a
  seguir funcionando si se le pasa una clasa derivada de la clase base.
  
  
+ #### Ejercicio LSP
  
+ Cree rectangulos y cuadrados, teniendo en cuenta que los cuadrados tienen sus lados iguales o su altura igual a su anchura.
+ 
+ Luego demuestre que el calculo del area para cada objeto de cada tipo da el resultado esperado.

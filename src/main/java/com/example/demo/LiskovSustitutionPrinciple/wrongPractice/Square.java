@@ -1,4 +1,4 @@
-package com.example.demo.LiskovSustitutionPrinciple;
+package com.example.demo.LiskovSustitutionPrinciple.wrongPractice;
 
 public class Square extends Rectangle {
     public Square() {

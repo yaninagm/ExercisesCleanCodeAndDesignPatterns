@@ -1,4 +1,4 @@
-package com.example.demo.LiskovSustitutionPrinciple;
+package com.example.demo.LiskovSustitutionPrinciple.wrongPractice;
 
 public class Rectangle {
     protected int width, height;

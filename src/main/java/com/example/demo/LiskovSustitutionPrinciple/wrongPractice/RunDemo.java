@@ -1,15 +1,7 @@
-package com.example.demo.LiskovSustitutionPrinciple;
+package com.example.demo.LiskovSustitutionPrinciple.wrongPractice;
 
-import com.example.demo.openClosedPrinciple.Color;
-import com.example.demo.openClosedPrinciple.Product;
-import com.example.demo.openClosedPrinciple.Size;
-import com.example.demo.openClosedPrinciple.goodPractice.*;
-import com.example.demo.openClosedPrinciple.wrongPractice.ProductFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Arrays;
-import java.util.List;
 
 @SpringBootApplication
 public class RunDemo {
