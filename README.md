@@ -18,6 +18,12 @@ revisar la resolución, entendiendo cual es la mejor forma de hacerlo.
 ## Open Closed Principle (OSP)
 _`<< A module should be open for extension but closed for modification.>>`_
 
+Este es uno de los principios mas importantes.
+
+El principio es: Deberiamos escribir nuestros modulos de tal manera que puedan ser extendidos y usados sin que sea necesario modificarlos. En otras palabras, debemos permitir los cambios sin tener que cambiar el código.
+
+Las técnicas mas usadas están basadas en  el uso de la abstraccion.
+
 Lo importante de este principio es que no debemos editar la funcionalidad que sabemos que esta lista y funcionando y que si deseamos una funcionalidad adicional hay que conectarla a lo ya existente sin modificar el código.
 
 **Ejercicio:** 
@@ -55,5 +61,16 @@ Se podría hacer algo sencillo usando objetos para cada tipo de filtro (codigo a
  		conditionByColor.filter(products).forEach(p -> System.out.println("producto: "+ p.getName()));
  		conditionBySize.filter(products).forEach(p -> System.out.println("producto: "+ p.getName()));`
  		
- *** Por que usar el parámetro T ? ***
+ ** Por que usar el parámetro T ? **
+ 
  Nos permite poder adaptarnos a cualquier tipo de busqueda de cualquier elemento y de cualquier filtro
+ 
+ ## Liskov sustitution principle (LSP)
+ 
+`"Subclases should be substitutable for their base classes"`
+ 
+ La clase derivada debe poder sutituirse por su clase base. Esto quiere decir que un usuario de una clase base deberia 
+ seguir funcionando si se le pasa una clasa derivada de la clase base.
+ 
+ 
+ 
