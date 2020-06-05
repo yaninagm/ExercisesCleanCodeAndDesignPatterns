@@ -85,7 +85,10 @@ Se podría hacer algo sencillo usando objetos para cada tipo de filtro (codigo a
  
 El método getArea() funciona correctamente para los objetos rectangulos pero no para los cuadrados.
 
-Eso es porque hay funciones que no se limitan a hacer lo que deberían hacer. Ej: getWeidth()   
+Eso es porque hay funciones que no se limitan a hacer lo que deberían hacer. Ej: getWeidth()  
+
+[Codigo de ejemplo con buenas prácticas](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/LiskovSustitutionPrinciple/goodPractice)
+ 
 
  ###### Solución usando buenas prácticas
  
@@ -93,3 +96,5 @@ El primer punto a tner en cuenta es que no es necesario una clase cuadrado, solo
 si un rectangular es un cuadrado  o no a través de un metodo que lo indique.
 
 Para construir explicitamente un cuadrado o un rectangulo, usaremos el patrón fabrica
+
+[Codigo de ejemplo con buenas prácticas](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/LiskovSustitutionPrinciple/goodPractice)
