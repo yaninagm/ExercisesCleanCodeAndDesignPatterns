@@ -4,7 +4,7 @@ I will add examples for SOLID  and other important patterns
 Los ejercicios estarán distribuidos por tipo de patron. Recomiendo tratar de resolverlo a partir del enunciado y luego 
 revisar la resolución, entendiendo cual es la mejor forma de hacerlo.
  
-## SOLID
+# SOLID
 **S:** Single responsability principle ... (SRP)
 
 **O:** Open-Closed Principle ............... (OSP)  
@@ -26,7 +26,7 @@ Las técnicas mas usadas están basadas en  el uso de la abstraccion.
 
 Lo importante de este principio es que no debemos editar la funcionalidad que sabemos que esta lista y funcionando y que si deseamos una funcionalidad adicional hay que conectarla a lo ya existente sin modificar el código.
 
-#### Ejercicio OCP 
+### Ejercicio OCP 
 Tenemos un sistema de catálogo de productos, donde cada producto tiene diferentes caracteristicas, como color,
  tamaño, etc. 
  
@@ -40,7 +40,7 @@ Tenemos un sistema de catálogo de productos, donde cada producto tiene diferent
 [Aquí puede comenzar a desarrollar](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/openClosedPrinciple/ownResolution)
 
 
-###### Solución 1 con malas prácticas:
+#### Solución 1 con malas prácticas:
 
 Se desarrollo un metodo por cada uno de los tipos de filtros que nos pide el jefe de producto.
 Cada vez que el equipo de producto quiera hacer un nuevo tipo de busqueda, tendré que modificar la clase (rompe el principio de cerrado para su modificación) y crear un metodo nuevo que cumpla con el nuevo filtro.
@@ -48,7 +48,7 @@ Cada vez que el equipo de producto quiera hacer un nuevo tipo de busqueda, tendr
 
 [Codigo de ejemplo con malas prácticas](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/openClosedPrinciple/wrongPractice)
 
-######  Solución2 usando el principio de OCP:
+#### Solución2 usando el principio de OCP:
 
 Abstraer los cambios en clases diferentes, utilizando [ el patron Specificación](https://en.wikipedia.org/wiki/Specification_pattern)
 La ventaja es que si alguien le solicita hacer un nuevo filtro, no tiene que modificar la clase, sino que crea una clase nueva, que herede de la ya existente
@@ -73,7 +73,7 @@ Se podría hacer algo sencillo usando objetos para cada tipo de filtro (codigo a
  seguir funcionando si se le pasa una clasa derivada de la clase base.
  
  
- #### Ejercicio LSP
+ ### Ejercicio LSP
  
  Cree rectangulos y cuadrados, teniendo en cuenta que los cuadrados tienen sus lados iguales o su altura igual a su anchura.
  
@@ -81,7 +81,7 @@ Se podría hacer algo sencillo usando objetos para cada tipo de filtro (codigo a
  
  Si violas este principio, da como resultado un codigo incorrecto en la herencia.
  
- ###### Solución usando malas prácticas
+ #### Solución usando malas prácticas
  
 El método getArea() funciona correctamente para los objetos rectangulos pero no para los cuadrados.
 
@@ -90,7 +90,7 @@ Eso es porque hay funciones que no se limitan a hacer lo que deberían hacer. Ej
 [Codigo de ejemplo con buenas prácticas](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/LiskovSustitutionPrinciple/goodPractice)
  
 
- ###### Solución usando buenas prácticas
+ #### Solución usando buenas prácticas
  
 El primer punto a tner en cuenta es que no es necesario una clase cuadrado, solo deberías definir 
 si un rectangular es un cuadrado  o no a través de un metodo que lo indique.
@@ -98,3 +98,23 @@ si un rectangular es un cuadrado  o no a través de un metodo que lo indique.
 Para construir explicitamente un cuadrado o un rectangulo, usaremos el patrón fabrica
 
 [Codigo de ejemplo con buenas prácticas](https://github.com/yaninagm/ExercisesCleanCodeAndDesignPatterns/blob/master/src/main/java/com/example/demo/LiskovSustitutionPrinciple/goodPractice)
+
+
+## Interface Segregation  Principle (ISP)
+
+`Los clientes no deben ser forzosamente dependiente de las interfaces que no utilizan`
+
+
+### Ejercicios
+En una empresa de impresoras multifucnionales ha desarrollado diferentes modelos de impresoras,
+ para eso se dicidio definir en una única interface los metodos generales que podría tener toda impresora.
+
+ La impresora Modelo1998 fue el primer modelo en basarse en esta interfaz; poco después se añadió un nuevo modelo, Modelo2000,
+  que además de las funciones anteriores añadía la posibilidad de hacer fotocopias.
+
+Posteriormente, surgió un nuevo modelo (Modelo2002) que se basaba en la misma clase abstracta ImpresoraMultifuncional e
+ incorporaba el soporte para comunicaciones TCP/IP en lugar del servicio de fax;
+  este modelo permitía enviar un documento directamente por correo electrónico, evitando así los altos costes de telefonía. 
+
+Implemente estos tipos de impresoras.
+
